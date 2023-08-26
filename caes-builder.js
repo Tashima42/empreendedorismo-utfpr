@@ -3,7 +3,7 @@ buildQuestions(caesForm.questions)
 function calculateResult() {
   const answers = []
   for (let i = 0; i < caesForm.questions.length; i++) {
-    const { value } = document.getElementById(`question-select-${i}`)
+    const { value } = document.getElementById(`question-caes-select-${i}`)
     console.log("value: ", value)
     if (value == "0") {
       alert(`Erro: nenhum valor selecionado na questão ${i + 1}`)
@@ -11,8 +11,14 @@ function calculateResult() {
     }
     answers.push(parseInt(value))
   }
-  console.log(answers)
-  console.log(caesForm.calculateResult(answers))
+  buildResult(JSON.stringify(caesForm.calculateResult(answers)))
+}
+
+function buildResult(result) {
+  const resultContainer = document.getElementById("result")
+  const resultP = document.createElement("p")
+  resultP.appendChild(document.createTextNode(result))
+  resultContainer.appendChild(resultP)
 }
 
 function buildQuestions(questions) {
@@ -22,59 +28,58 @@ function buildQuestions(questions) {
   }
 }
 
-
 function buildQuestion(formId, titleText) {
   const container = document.createElement("div")
-  container.classList.add("question-container")
-  container.id = `question-container-${formId}`
+  container.classList.add("question-caes-caes-container")
+  container.id = `question-caes-container-${formId}`
 
   const title = document.createElement("p")
-  title.classList.add("question-title")
+  title.classList.add("question-caes-caes-title")
   const titleB = document.createElement("b")
-  title.id = `question-title-${formId}`
+  title.id = `question-caes-title-${formId}`
   titleB.appendChild(document.createTextNode(titleText))
   title.appendChild(titleB)
 
   const label = document.createElement("label")
-  label.classList.add("question-label")
+  label.classList.add("question-caes-label")
   label.appendChild(document.createTextNode("Escolha uma opção: "))
-  label.setAttribute("for", `question-select-${formId}`)
-  label.id = `question-label-${formId}`
+  label.setAttribute("for", `question-caes-select-${formId}`)
+  label.id = `question-caes-label-${formId}`
 
   const select = document.createElement("select")
-  select.classList.add("question-select")
-  select.id = `question-select-${formId}`
+  select.classList.add("question-caes-select")
+  select.id = `question-caes-select-${formId}`
 
   const optionSelecionar = document.createElement("option")
-  optionSelecionar.classList.add("question-option")
+  optionSelecionar.classList.add("question-caes-option")
   optionSelecionar.setAttribute("value", "0")
   optionSelecionar.appendChild(document.createTextNode("Selecionar"))
-  optionSelecionar.id = `question-option-0-${formId}`
+  optionSelecionar.id = `question-caes-option-0-${formId}`
   const optionNunca = document.createElement("option")
-  optionNunca.classList.add("question-option")
+  optionNunca.classList.add("question-caes-option")
   optionNunca.setAttribute("value", "1")
-  optionNunca.appendChild(document.createTextNode("Nunca"))
-  optionNunca.id = `question-option-1-${formId}`
+  optionNunca.appendChild(document.createTextNode("1 - Nunca"))
+  optionNunca.id = `question-caes-option-1-${formId}`
   const optionRaramente = document.createElement("option")
-  optionRaramente.classList.add("question-option")
+  optionRaramente.classList.add("question-caes-option")
   optionRaramente.setAttribute("value", "2")
-  optionRaramente.appendChild(document.createTextNode("Raramente"))
-  optionRaramente.id = `question-option-2-${formId}`
+  optionRaramente.appendChild(document.createTextNode("2 - Raramente"))
+  optionRaramente.id = `question-caes-option-2-${formId}`
   const optionAlgumas = document.createElement("option")
-  optionAlgumas.classList.add("question-option")
+  optionAlgumas.classList.add("question-caes-option")
   optionAlgumas.setAttribute("value", "3")
-  optionAlgumas.appendChild(document.createTextNode("Algumas vezes"))
-  optionAlgumas.id = `question-option-3-${formId}`
+  optionAlgumas.appendChild(document.createTextNode("3 - Algumas vezes"))
+  optionAlgumas.id = `question-caes-option-3-${formId}`
   const optionMaioria = document.createElement("option")
-  optionMaioria.classList.add("question-option")
+  optionMaioria.classList.add("question-caes-option")
   optionMaioria.setAttribute("value", "4")
-  optionMaioria.appendChild(document.createTextNode("A maioria das vezes"))
-  optionMaioria.id = `question-option-4-${formId}`
+  optionMaioria.appendChild(document.createTextNode("4 - A maioria das vezes"))
+  optionMaioria.id = `question-caes-option-4-${formId}`
   const optionSempre = document.createElement("option")
-  optionSempre.classList.add("question-option")
+  optionSempre.classList.add("question-caes-option")
   optionSempre.setAttribute("value", "5")
-  optionSempre.appendChild(document.createTextNode("Sempre"))
-  optionSempre.id = `question-option-5-${formId}`
+  optionSempre.appendChild(document.createTextNode("5 - Sempre"))
+  optionSempre.id = `question-caes-option-5-${formId}`
 
   select.appendChild(optionSelecionar)
   select.appendChild(optionNunca)

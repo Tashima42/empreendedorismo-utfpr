@@ -451,7 +451,7 @@ const caesForm = {
       persistence: answers[1] + answers[12] + answers[23] - answers[34] + answers[45] + 6 - correctionFactor,
       commitment: answers[2] + answers[13] + answers[24] + answers[35] - answers[46] + 6 - correctionFactor,
       qualityEfficiency: answers[3] + answers[14] + answers[25] + answers[36] + answers[47] - correctionFactor,
-      calculatedRisks: answers[4] + answers[15] + answers[26] + answers[37] + answers[48] + 6 - correctionFactor,
+      calculatedRisks: answers[4] + answers[15] + answers[26] - answers[37] + answers[48] + 6 - correctionFactor,
       goals: answers[5] - answers[16] + answers[27] + answers[38] + answers[49] + 6 - correctionFactor,
       informationSearch: answers[6] + answers[17] - answers[28] + answers[39] + answers[50] + 6 - correctionFactor,
       planning: answers[7] + answers[18] + answers[29] - answers[40] + answers[51] + 6 - correctionFactor,
