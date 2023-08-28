@@ -1,4 +1,4 @@
-buildQuestions(profileForm.questions)
+//buildQuestions(profileForm.questions)
 
 function calculateResult() {
   let total = 0

@@ -1,4 +1,10 @@
-buildQuestions(caesForm.questions)
+// this is disabled since the code is already generated
+// and it is already in the index.html file.
+// If new questions are created and need to be inserted
+// they can be added to the form.js file and the function
+// call below uncommented.
+
+//buildQuestions(caesForm.questions)
 
 function calculateResult() {
   const answers = []
