@@ -363,7 +363,7 @@ const profileForm = {
       },
     ],
   calculateResult: (total) => {
-    if (typeof total != Number) return `Invalid type, expected a number, got ${typeof total}`
+    if (typeof total != "number") return `Invalid type, expected a number, got ${typeof total}`
 
     if (total < 0) return `Invalid result, total should be more than 0, got ${total}`
 

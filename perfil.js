@@ -13,13 +13,13 @@ function calculateResult() {
       }
     }
   }
-  buildResult(total)
+  buildResult(total, profileForm.calculateResult(total))
 }
 
-function buildResult(result) {
+function buildResult(total, message) {
   const resultContainer = document.getElementById("result")
   const resultP = document.createElement("p")
-  resultP.appendChild(document.createTextNode(result))
+  resultP.appendChild(document.createTextNode(`${total} - ${message}`))
   resultContainer.appendChild(resultP)
 }
 
