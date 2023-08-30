@@ -41,3 +41,15 @@ button{
     margin-bottom: 30px;
     text-align: center;
 }
+table, td {
+    border: 1px solid #767676;
+    width: 70%;
+
+  }
+th {
+    padding: 20px;
+    font-weight: bolda;
+}
+td {
+    padding: 20px;
+}
