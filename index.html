@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Empreendedorismo UTFPR</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <h1>Auto avaliação da CAES - Características empreendedoras</h1>
 
-  <p>Este formúlario constituí-se de 55 afirmações breves.<br>
+  <p style="line-height: 25px;">Este formúlario constituí-se de 55 afirmações breves.<br>
     Leia cuidadosamente cada afirmação e decida qual o descreve de melhor forma.<br>
     Seja honesto consigo mesmo. Lembre-se de que ninguémm faz tudo corretamente, nem mesmo é desejável que se saiba
     tudo.
@@ -19,8 +20,10 @@
   <form id="questions">
     <div class="question-caes-caes-container" id="question-caes-container-0">
       <p class="question-caes-caes-title" id="question-caes-title-0"><b>1 - Esforço-me para realizar as coisas que devem
-          ser feitas.</b></p><label class="question-caes-label" for="question-caes-select-0"
-        id="question-caes-label-0">Escolha uma opção: </label><select class="question-caes-select"
+          ser feitas.</b></p>
+          <label class="question-caes-label" for="question-caes-select-0"
+        id="question-caes-label-0">Escolha uma opção: </label>
+        <select class="question-caes-select"
         id="question-caes-select-0">
         <option class="question-caes-option" value="0" id="question-caes-option-0-0">Selecionar</option>
         <option class="question-caes-option" value="1" id="question-caes-option-1-0">1 - Nunca</option>
@@ -726,8 +729,9 @@
   </form>
 
   <br>
-  <button onclick="calculateResult()">cacular resultado</button>
-
+  <div class="calculo">
+  <button onclick="calculateResult()">Calcular resultado</button>
+  </div>
   <br>
   <div id="result"></div>
 

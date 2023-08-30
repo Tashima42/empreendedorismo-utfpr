@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+p {
+    font-weight: normal;
+
+}
+
+h1 {
+    text-align: center;
+}
+button{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.question-caes-label{
+    font-size: 16px;
+    font-weight: normal;
+}
+.question-caes-select{
+    font-size: 17px;
+}
+.question-caes-option {
+    font-size: 17px;
+}
+.question-caes-caes-container {
+    margin-bottom: 40px;
+    border:solid 1px #767676;
+    border-radius:10px 10px 10px 10px;
+    padding: 10px 0px 30px 20px;
+}
+.question-caes-caes-title {
+    font-size: 20px;
+}
+.calculo {
+    margin-bottom: 30px;
+    text-align: center;
+}
