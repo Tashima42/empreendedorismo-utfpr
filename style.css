@@ -14,26 +14,25 @@ h1 {
     text-align: center;
 }
 button{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     
 }
 .question-caes-label{
     font-size: 16px;
     font-weight: normal;
-    margin-bottom: 20px;
 }
 .question-caes-select{
-    font-size: 17px;
+    font-size: 16px;
 }
 .question-caes-option {
-    font-size: 17px;
+    font-size: 16px;
 }
 .question-caes-caes-container {
     margin-bottom: 40px;
     border:solid 1px #767676;
     border-radius:10px 10px 10px 10px;
-    padding: 10px 0px 30px 20px;
+    padding: 5px 0px 20px 20px;
 }
 .question-caes-caes-title {
     font-size: 20px;
@@ -44,8 +43,6 @@ button{
 }
 table, td {
     border: 3px solid #767676;
-    width: 70%;
-
   }
 th {
     padding: 20px;
