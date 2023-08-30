@@ -10,21 +10,28 @@ function calculateResult() {
   const answers = []
   for (let i = 0; i < caesForm.questions.length; i++) {
     const { value } = document.getElementById(`question-caes-select-${i}`)
-    console.log("value: ", value)
     if (value == "0") {
       alert(`Erro: nenhum valor selecionado na questão ${i + 1}`)
       return
     }
     answers.push(parseInt(value))
   }
-  buildResult(JSON.stringify(caesForm.calculateResult(answers)))
+  buildResult(caesForm.calculateResult(answers))
 }
 
 function buildResult(result) {
-  const resultContainer = document.getElementById("result")
-  const resultP = document.createElement("p")
-  resultP.appendChild(document.createTextNode(result))
-  resultContainer.appendChild(resultP)
+  console.log(result)
+
+  document.getElementById("resultado-busca-oportunidade").appendChild(document.createTextNode(result.buscaOportunidade))
+  document.getElementById("resultado-persistencia").appendChild(document.createTextNode(result.persistencia))
+  document.getElementById("resultado-comprometimento").appendChild(document.createTextNode(result.comprometimento))
+  document.getElementById("resultado-exigencia").appendChild(document.createTextNode(result.exigencia))
+  document.getElementById("resultado-riscos").appendChild(document.createTextNode(result.riscos))
+  document.getElementById("resultado-metas").appendChild(document.createTextNode(result.metas))
+  document.getElementById("resultado-busca-informacoes").appendChild(document.createTextNode(result.buscaInformacoes))
+  document.getElementById("resultado-planejamento").appendChild(document.createTextNode(result.planejamento))
+  document.getElementById("resultado-persuasao").appendChild(document.createTextNode(result.persuasao))
+  document.getElementById("resultado-independencia").appendChild(document.createTextNode(result.independencia))
 }
 
 function buildQuestions(questions) {
