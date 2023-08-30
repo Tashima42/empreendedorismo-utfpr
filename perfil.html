@@ -5,10 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Empreendedorismo UTFPR</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <p></p>
+  <h1>Teste aqui seu perfil empreendedor</h1>
+  <p style="text-align: center;">Verifique através deste teste, se você tem tino empresarial. Seja sincero!</p>
 
   <form id="questions">
     <fieldset class="question-perfil-container">
@@ -298,11 +300,50 @@
           obstáculos.</label></div>
     </fieldset>
   </form>
-  <br>
-  <button onclick="calculateResult()">cacular resultado</button>
 
-  <br>
-  <div id="result"></div>
+  <div class="result">
+    <button class="perfil-button" onclick="calculateResult()">cacular resultado</button>
+    <div class="result-container">
+      <p>resultado: </p>
+      <p id="result-number"></p>
+    </div>
+    <div class="analise-resultados">
+      <h3>Análise dos Resultados:</h3>
+      <ul>
+        <li id="acima-90">
+          <b>Acima de 90 pontos.</b> Seus resultados indicam que você é uma pessoa independente, criativa,
+          disciplinada,
+          confiante; com capacidade de assumir riscos e talento para identificar boas oportunidades de negócios.
+          Portanto,
+          você tem as características adequadas a um empresário de sucesso.
+        </li>
+        <li id="acima-70"><b>De 89 a 70 pontos.</b> Se os seus resultados situaram-no nesta faixa de pontuação, tudo
+          indica que
+          você pode vir
+          a
+          ser um empresário de sucesso. Todavia, é necessário que você procure adquirir mais autoconfiança,
+          independência,
+          criatividade e maior capacidade para enfrentar riscos. Use os resultados deste teste para identificar os
+          pontos
+          fracos e os pontos fortes de sua personalidade, visando superar os aspectos negativos e reforçar os positivos.
+        </li>
+        <li id="acima-50"><b>De 69 a 50 pontos.</b> Os resultados mostram que você tem algum potencial para ser
+          empreendedor.
+          Mas, ainda é
+          preciso desenvolver os atributos pessoais dos empresários de sucesso. Para isso, você deve preparar-se lendo
+          mais sobre negócios, fazendo treinamentos para desenvolver sua criatividade, autodisciplina, confiança e
+          capacidade de assumir riscos, e conversar com empresários bem-sucedidos para descobrir como eles chegaram lá.
+        </li>
+        <li id="acima-30"><b>De 49 a 30 pontos.</b> Se você se situou nessa faixa de pontuação, é aconselhável que
+          permaneça em
+          seu emprego e
+          não arrisque suas economias em um negócio próprio até desenvolver sua criatividade, ganhar mais segurança e
+          confiança, aprendendo a correr riscos.</li>
+        <li id="abaixo-30"><b>Abaixo de 30 pontos.</b> Provavelmente, você leva uma vida profissional
+          rotineira, sem grandes perspectivas, e prefere as coisas como estão.</li>
+      </ul>
+    </div>
+  </div>
 
   <script src="./form.js"></script>
   <script src="./perfil.js"></script>

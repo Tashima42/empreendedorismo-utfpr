@@ -363,19 +363,19 @@ const profileForm = {
       },
     ],
   calculateResult: (total) => {
-    if (typeof total != "number") return `Invalid type, expected a number, got ${typeof total}`
+    if (typeof total != "number") alert(`Tipo invalido, o esperado era "number", mas o tipo e: ${typeof total}`)
 
-    if (total < 0) return `Invalid result, total should be more than 0, got ${total}`
+    if (total < 0) alert(`Resultado invalido, o resultado precisa ser maior que 0, mas foi de: ${total}`)
 
-    if (total < 30) return "Provavelmente, você leva uma vida profissional rotineira, sem grandes perspectivas, e prefere as coisas como estão."
+    if (total < 30) return "abaixo-30"
 
-    if (total >= 30 && total <= 49) return "Se você se situou nessa faixa de pontuação, é aconselhável que permaneça em seu emprego e não arrisque suas economias em um negócio próprio até desenvolver sua criatividade, ganhar mais segurança e confiança, aprendendo a correr riscos."
+    if (total >= 30 && total <= 49) return "acima-30"
 
-    if (total >= 50 && total <= 69) return "Os resultados mostram que você tem algum potencial para ser empreendedor. Mas, ainda é preciso desenvolver os atributos pessoais dos empresários de sucesso. Para isso, você deve preparar-se lendo mais sobre negócios, fazendo treinamentos para desenvolver sua criatividade, autodisciplina, confiança e capacidade de assumir riscos, e conversar com empresários bem-sucedidos para descobrir como eles chegaram lá."
+    if (total >= 50 && total <= 69) return "acima-50"
 
-    if (total >= 70 && total <= 89) return "Se os seus resultados situaram-no nesta faixa de pontuação, tudo indica que você pode vir a ser um empresário de sucesso. Todavia, é necessário que você procure adquirir mais autoconfiança, independência, criatividade e maior capacidade para enfrentar riscos. Use os resultados deste teste para identificar os pontos fracos e os pontos fortes de sua personalidade, visando superar os aspectos negativos e reforçar os positivos."
+    if (total >= 70 && total <= 89) return "acima-70"
 
-    if (total > 90) return "Seus resultados indicam que você é uma pessoa independente, criativa, disciplinada, confiante; com capacidade de assumir riscos e talento para identificar boas oportunidades de negócios. Portanto, você tem as características adequadas a um empresário de sucesso."
+    if (total > 90) return "acima-90"
 
     return "Unexpected result"
   }

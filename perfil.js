@@ -16,11 +16,12 @@ function calculateResult() {
   buildResult(total, profileForm.calculateResult(total))
 }
 
-function buildResult(total, message) {
-  const resultContainer = document.getElementById("result")
-  const resultP = document.createElement("p")
-  resultP.appendChild(document.createTextNode(`${total} - ${message}`))
-  resultContainer.appendChild(resultP)
+function buildResult(total, id) {
+  const resultContainer = document.getElementById("result-number")
+  resultContainer.appendChild(document.createTextNode(total))
+
+  const resultLi = document.getElementById(id)
+  resultLi.classList.add("result-selected")
 }
 
 function buildQuestions(questions) {
