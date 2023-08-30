@@ -42,7 +42,7 @@ button{
     text-align: center;
 }
 table, td {
-    border: 1px solid #767676;
+    border: 3px solid #767676;
     width: 70%;
 
   }
@@ -51,5 +51,5 @@ th {
     font-weight: bolda;
 }
 td {
-    padding: 20px;
+    padding: 10px;
 }
