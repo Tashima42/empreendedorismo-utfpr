@@ -21,6 +21,7 @@ button{
 .question-caes-label{
     font-size: 16px;
     font-weight: normal;
+    margin-bottom: 20px;
 }
 .question-caes-select{
     font-size: 17px;
