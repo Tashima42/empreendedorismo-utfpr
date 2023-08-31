@@ -72,3 +72,37 @@ li {
 .result-selected {
   background-color: rgba(239, 239, 110, 0.641);
 }
+
+.testes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.teste-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.teste-container img {
+  width: 30%;
+}
+
+.teste-container a {
+  color: black;
+  text-decoration: none;
+  text-decoration-line: underline;
+}
+
+.logo-utfpr {
+  width: 30vh;
+}
