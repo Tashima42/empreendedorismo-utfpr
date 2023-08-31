@@ -110,3 +110,13 @@ li {
 .logo-utfpr {
   width: 30vh;
 }
+
+@media screen and (max-width: 600px) {
+  .teste-url {
+    display: none;
+  }
+
+  .teste-container h1 {
+    font-size: 1rem;
+  }
+}
