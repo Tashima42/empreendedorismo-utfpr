@@ -6,12 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Empreendedorismo UTFPR</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="print" href="print.css">
 </head>
 
 <body>
-  <h1>Auto avaliação da CAES - Características empreendedoras</h1>
+  <h1 class="title">Auto avaliação da CAES - Características empreendedoras</h1>
 
-  <p style="line-height: 25px; text-align: center;">Este formúlario constituí-se de 55 afirmações breves.<br>
+  <p class="description" style="line-height: 25px; text-align: center;">Este formúlario constituí-se de 55 afirmações
+    breves.<br>
     Leia cuidadosamente cada afirmação e decida qual o descreve de melhor forma.<br>
     Seja honesto consigo mesmo. Lembre-se de que ninguémm faz tudo corretamente, nem mesmo é desejável que se saiba
     tudo.
@@ -735,7 +737,6 @@
 
   <table style="margin-left: auto; margin-right: auto;">
     <tr>
-      <th></th>
       <th>Pontuação</th>
     </tr>
     <tr>
@@ -783,6 +784,10 @@
       <td id="fator-correcao"></td>
     </tr>
   </table>
+
+  <div class="print">
+    <button onclick="print()">Imprimir resultados</button>
+  </div>
 
   <script src="./form.js"></script>
   <script src="./caes.js"></script>

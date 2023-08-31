@@ -6,11 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Empreendedorismo UTFPR</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="print" href="print.css">
 </head>
 
 <body>
-  <h1>Teste aqui seu perfil empreendedor</h1>
-  <p style="text-align: center;">Verifique através deste teste, se você tem tino empresarial. Seja sincero!</p>
+  <h1 class="title">Teste aqui seu perfil empreendedor</h1>
+  <p class="description" style="text-align: center;">Verifique através deste teste, se você tem tino empresarial. Seja
+    sincero!</p>
 
   <form id="questions">
     <fieldset class="question-perfil-container">
@@ -305,7 +307,7 @@
     <button class="perfil-button" onclick="calculateResult()">cacular resultado</button>
     <div class="result-container">
       <p>resultado: </p>
-      <p id="result-number"></p>
+      <p id="result-number"> </p>
     </div>
     <div class="analise-resultados">
       <h3>Análise dos Resultados:</h3>
@@ -343,6 +345,10 @@
           rotineira, sem grandes perspectivas, e prefere as coisas como estão.</li>
       </ul>
     </div>
+  </div>
+
+  <div class="print">
+    <button onclick="print()">Imprimir resultados</button>
   </div>
 
   <script src="./form.js"></script>

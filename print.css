@@ -1,0 +1,23 @@
+.description {
+  display: none;
+}
+
+.print {
+  display: none;
+}
+
+#questions {
+  display: none;
+}
+
+.calculo {
+  display: none;
+}
+
+.result-selected {
+  text-decoration: underline;
+}
+
+button {
+  display: none;
+}

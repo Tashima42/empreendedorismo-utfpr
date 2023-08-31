@@ -24,7 +24,7 @@ function calculateResult() {
 
 function buildResult(total, id) {
   const resultContainer = document.getElementById("result-number")
-  resultContainer.appendChild(document.createTextNode(total))
+  resultContainer.appendChild(document.createTextNode(" " + total))
 
   const resultLi = document.getElementById(id)
   resultLi.classList.add("result-selected")
