@@ -7,9 +7,15 @@ function calculateResult() {
     const element = document.getElementsByName(`question-perfil-options-${question.id}`)
     for (let j = 0; j < element.length; j++) {
       const el = element[j]
+      let oneChecked = false
       if (el.checked) {
         const value = question.options[el.value].weight
         total += value
+        oneChecked = true
+      }
+      if (!oneChecked) {
+        alert(`A pergunta ${i + 1} não foi respondida`)
+        return
       }
     }
   }

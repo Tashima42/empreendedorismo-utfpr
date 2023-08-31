@@ -32,6 +32,7 @@ function buildResult(result) {
   document.getElementById("resultado-planejamento").appendChild(document.createTextNode(result.planejamento))
   document.getElementById("resultado-persuasao").appendChild(document.createTextNode(result.persuasao))
   document.getElementById("resultado-independencia").appendChild(document.createTextNode(result.independencia))
+  document.getElementById("fator-correcao").appendChild(document.createTextNode(result.fatorCorrecao))
 }
 
 function buildQuestions(questions) {

@@ -457,6 +457,7 @@ const caesForm = {
       planejamento: answers[7] + answers[18] + answers[29] - answers[40] + answers[51] + 6 - correctionFactor,
       persuasao: answers[8] - answers[19] + answers[30] + answers[41] + answers[52] + 6 - correctionFactor,
       independencia: answers[9] - answers[20] + answers[31] + answers[42] + answers[53] + 6 - correctionFactor,
+      fatorCorrecao: correction,
     }
   }
 }
