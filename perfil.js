@@ -5,18 +5,18 @@ function calculateResult() {
   for (let i = 0; i < profileForm.questions.length; i++) {
     const question = profileForm.questions[i]
     const element = document.getElementsByName(`question-perfil-options-${question.id}`)
+    let oneChecked = false
     for (let j = 0; j < element.length; j++) {
       const el = element[j]
-      let oneChecked = false
       if (el.checked) {
         const value = question.options[el.value].weight
         total += value
         oneChecked = true
       }
-      if (!oneChecked) {
-        alert(`A pergunta ${i + 1} não foi respondida`)
-        return
-      }
+    }
+    if (!oneChecked) {
+      alert(`A pergunta ${i + 1} não foi respondida`)
+      return
     }
   }
   buildResult(total, profileForm.calculateResult(total))
